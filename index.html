@@ -12,20 +12,41 @@
   <div class="calc-body">
     <h1>Calculator</h1>
     <div class="display">
-      <!-- span for display -->
+      <span class="output"></span>
+      <span class="input">0</span>
     </div>
-  </div>
-  <div class="number-buttons">
-    <button id="seven">7</button>
-    <button id="eight">8</button>
-    <button id="nine">9</button>
-    <button id="four">4</button>
-    <button id="five">5</button>
-    <button id="six">6</button>
-    <button id="one">1</button>
-    <button id="two">2</button>
-    <button id="three">3</button>
-    <button id="zero">0</button>
+    <div class="top-btns">
+      <button id="clear">CE</button>
+      <button id="del">Del</button>
+    </div>
+    <div class="number-buttons">
+      <button id="seven" data-number>7</button>
+      <button id="eight" data-number>8</button>
+      <button id="nine" data-number>9</button>
+      <div class="func-btns">
+        <button id="divide" data-operation>/</button>
+      </div>
+      <button id="four" data-number>4</button>
+      <button id="five" data-number>5</button>
+      <button id="six" data-number>6</button>
+      <div class="func-btns">
+        <button id="multiply" data-operation>x</button>
+      </div>
+      <button id="one" data-number>1</button>
+      <button id="two" data-number>2</button>
+      <button id="three" data-number>3</button>
+      <div class="func-btns">
+        <button id="add" data-operation>+</button>
+      </div>
+      <button id="point">.</button>
+      <button id="zero" data-number>0</button>
+      <div class="func-btns">
+        <button id="equals">=</button>
+      </div>
+      <div class="func-btns">
+        <button id="subtract" data-operation>-</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>

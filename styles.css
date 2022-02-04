@@ -8,16 +8,107 @@ body {
 .calc-body {
   background-color: #313dc4;
   width: 550px;
-  height: 650px;
   border-radius: 20px;
-  margin-top: 50px;
+  margin-top: 30px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+}
+
+.calc-body h1 {
+  align-self: center;
+  font-size: 40px;
+}
+
+.calc-body button:hover {
+  background-color: #b4b4b4;
 }
 
 .display {
   background-color: #787ebf;
   width: 450px;
   height: 75px;
+  align-self: center;
+  margin-bottom: 40px;
+  font-size: 22px;
+  text-align: right;
+  display: grid;
+}
+
+.input {
+  font-size: 30px;
+}
+
+.input,
+.output {
+  margin-right: 10px;
+}
+
+.top-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-bottom: 3px;
+  width: 450px;
+}
+
+.top-btns button {
+  font-size: 40px;
+  height: 80px;
+  border: none;
+  width: 223.5px;
+}
+
+.number-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+  width: 450px;
+  margin-left: 50px;
+}
+
+.number-buttons button {
+  font-size: 40px;
+  height: 80px;
+  background-color: #dedede;
+  border: none;
+}
+
+.func-btns button {
+  width: 110.25px;
+}
+
+#divide,
+#multiply,
+#add,
+#subtract {
+  background-color: #757575
+}
+#divide:hover,
+#multiply:hover,
+#add:hover,
+#subtract:hover {
+  background-color: #848484;
+}
+
+#equals {
+  background-color: #2b8223
+}
+#equals:hover {
+  background-color: #359e2c;
+}
+
+#clear {
+  background-color: #a03535;
+}
+#clear:hover {
+  background-color: #bc4040;
+}
+
+#del {
+  background-color: #b5aa30
+}
+#del:hover {
+  background-color: #d3c639;
 }
