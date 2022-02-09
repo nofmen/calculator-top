@@ -6,7 +6,8 @@ const operationBtn = document.querySelectorAll("[data-operation]");
 
 let operation = "";
 let inputField = 0;
-let number1 = 0;
+let firstOperator = 0;
+let secondOperator = 0;
 
 function doOperation(number, operation) {}
 
@@ -24,15 +25,15 @@ operationBtn.forEach((button) =>
 		operation = button.textContent;
 
 		if (inputDisplay.textContent == 0) {
-      console.log(inputField + ' - 1');
-      outputDisplay.textContent = `${inputField} ${operation} `;
-      console.log('operation: ' + operation);
-    } else {
-      outputDisplay.append(`${inputDisplay.textContent} ${operation} `);
-      inputField = inputDisplay.textContent;
-      console.log(inputField + ' - 2');
-      inputDisplay.textContent = 0;
-      console.log(inputField + ' - 3');
-    }
+			outputDisplay.textContent = `${inputField} ${operation} `;
+		} else if (outputDisplay) {
+			outputDisplay.append(`${inputDisplay.textContent} ${operation} `);
+			inputField = inputDisplay.textContent;
+			inputDisplay.textContent = 0;
+      firstOperator = inputDisplay.textContent;
+		} else {
+      secondOperator = inputDisplay.textContent;
+			console.log(`${firstOperator} ${operation} ${secondOperator}`);
+		}
 	})
 );
